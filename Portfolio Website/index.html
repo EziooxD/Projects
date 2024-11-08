@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d7280af83.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <div class="background-video">
+            <video autoplay loop muted>
+              <source src="images/856356-hd_1920_1080_25fps.mp4" type="video/mp4">
+            </video>
+          </div>          
+        <nav>
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Hey, I am</p>
+            <h1><span>Aman Kumar</span></h1>
+            <p>Software Developer</p>
+        </div>
+    </div>
+  </div>
+  <!-- ABOUT SECTION -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-text">A highly motivated graduate excelling in software development and team collaboration. Swiftly masters new
+                    skills, solves complex problems, and delivers high-quality projects. Committed to continuous learning and
+                    leveraging technical expertise to drive innovation and achieve outstanding results.</p>
+                    
+                <div class="tab-titles">
+                    <p class="tab-links  active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Language</span><br>Core Java, Advance Java -Servlet, JSP, JDBC- , SQL, HTML, CSS</li>
+                        <li><span>Technologies</span><br>Linux</li>
+                        <li><span>Others</span><br>Data Structures, Object-Oriented Programming</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Sept 2023 - Oct 2023</span><br>Industrial Training</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Master's</span><br>Master's in Computer Applications<br><i>2024 - CURRENT</i></li>
+                        <li><span>Bachelor's</span><br>Bachelor's in Computer Applications<br><i>2021 - 2024</i></li>
+                        <li><span>Senior Secondary Education</span><br>St. Karens Senior Secondary School<br><i>2019 - 2021</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--  SERVICES SECTION -->
+  <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>ANDROID DEVELOPMENT</h2>
+                <p>Developing full stack android application. Excelling in UI and secure and understandable management of data using different types of databases.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>FLUTTER DEVELOPMENT</h2>
+                <p>Since college experimented a lot with flutter. Self taught GetX, Provider etc and implemented to real life problems.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>DATABASE MANAGEMENT</h2>
+                <p>Different types of databases can be used as per the requirements of project and ask of clients. Implemented Firebase, MongoDB, MySql</p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--  Projects SECTION -->
+  <div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/lively_with_bg.png">
+                <div class="layer">
+                    <h3>Web Application using Java</h3>
+                    <p>Developed social media clone with personal touch. Used Firebase for secure authentication. Firebase realtime database is used to manipulate data of user.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/hocologo.png">
+                <div class="layer">
+                    <h3>Retro Runner</h3>
+                    <p>Applicaation based on a Game named Mario . It is isnpired from the og game mario and it has been deisgn and developed using Pygames</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/community_logoo.png">
+                <div class="layer">
+                    <h3>Healthcare Chatbot</h3>
+                    <p>A Chatbot Application using Python, Langchain , llama model etc.<br>COMING SOON</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!--  CONTACT SECTION -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> amansingh916202@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +919523854055</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/aman-kumar-1a7136231/"><i class="fa-brands fa-linkedin"></i></a>
+                  
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">SUBMIT</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Aman. Made with <i class="fa-solid fa-heart"></i> by Aman</p>
+    </div>
+  </div>
+  <!--  ----- Scripts ---- -->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPLdZiQjxqh2K-WvqHnlCuR1sqcKlJxliZ3jbY_5jkDw_bbS_hDRYonho8SjSVKhfAZg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent to Aman successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
